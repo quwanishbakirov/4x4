@@ -1,0 +1,53 @@
+.head span a{
+    text-decoration: none;
+    color: #fff;
+}
+.box{
+    width: 60px;
+    height: 60px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(93, 126, 120);
+    color: #fff;
+}
+.box:hover{
+    background-color: rgb(93, 126, 120);
+}
+.startGame{
+    border-radius: 55px;
+}
+.container-main{
+    max-width: 480px;
+    min-width: 200px;
+}
+.square{
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.footer a{
+    color: green;
+}
+
+
+.link{
+    text-decoration: none;
+    color: red;
+}
