@@ -4,60 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/paper.css">
+    <link rel="stylesheet" href="static/css/paper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <link rel="icon" href="favicon.ico">
     <title>4x4</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark head">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">
-              <a href="https://en.wikipedia.org/wiki/Sliding_puzzle">Sliding puzzle</a>
-           </span>
+    <nav class="border split-nav">
+        <div class="nav-brand">
+          <h3><a href="#">Sliding puzzle</a></h3>
         </div>
+          <div><img src="static/images/moon.png" id="icon"></div>
       </nav>
-    <div class="container-sm container-main">
+<div class="container-main">
         <div class="header">
-            <button class="startGame btn btn-outline-secondary" onclick="startGame()">Jańa oyın</button>
-            <button class="startGame btn btn-outline-secondary score" disabled><span id="cnt" style="font-weight: bold;">0</span></button>
+            <button class="startGame padding-none" onclick="startGame()">
+                <i class="bi-play"></i>Play
+            </button>
+            <i class="bi-wallet" id="cnt" style="color: var(--secondary-color);">0</i>
         </div>  
     <div class="square">
-        <div class="row inner-box-container">
-            <button id="btn1" class="col box btn"></button>
-            <button id="btn2" class="col box btn"></button>
-            <button id="btn3" class="col box btn"></button>
-            <button id="btn4" class="col box btn"></button>
-        </div>
-        <div class="row inner-box-container">
-            <button id="btn5" class="col box btn"></button>
-            <button id="btn6" class="col box btn"></button>
-            <button id="btn7" class="col box btn"></button>
-            <button id="btn8" class="col box btn"></button>
-        </div>
-        <div class="row inner-box-container">
-            <button id="btn9" class="col box btn"></button>
-            <button id="btn10" class="col box btn"></button>
-            <button id="btn11" class="col box btn"></button>
-            <button id="btn12" class="col box btn"></button>
-        </div>
-        <div class="row inner-box-container">
-            <button id="btn13" class="col box btn"></button>
-            <button id="btn14" class="col box btn"></button>
-            <button id="btn15" class="col box btn"></button>
-            <button id="btn16" class="col box btn"></button>
-        </div>
-    </div>
-    <div class="footer">
-        <span class="footer-content">
-           2022,<i class="bi bi-heart-fill" style="color: red;"></i>
-                <a class="link" href="https://github.com/quwanishbakirov" target="_blank">Bakirov</a>
-                <i class="bi bi-heart-fill" style="color: red;"></i>
-        </span>
+            <button id="btn1" class="box"></button>
+            <button id="btn2" class="box"></button>
+            <button id="btn3" class="box"></button>
+            <button id="btn4" class="box"></button>
+
+            <button id="btn5" class="box">G</button>
+            <button id="btn6" class="box">o</button>
+            <button id="btn7" class="box">o</button>
+            <button id="btn8" class="box">d</button>
+            
+            <button id="btn9" class="box">L</button>
+            <button id="btn10" class="box">u</button>
+            <button id="btn11" class="box">c</button>
+            <button id="btn12" class="box">k</button>
+
+            <button id="btn13" class="box"></button>
+            <button id="btn14" class="box"></button>
+            <button id="btn15" class="box"></button>
+            <button id="btn16" class="box"></button>
     </div>
 </div>
+<footer class="border">
+       2022, Made with 💛 by  <a class="link" href="https://github.com/quwanishbakirov" target="_blank"> Bakirov</a>
+</footer>
 </body>
-<script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/app.js"></script>
 </html>

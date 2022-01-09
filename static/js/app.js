@@ -1,20 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
-    let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    width = Math.min(width, 480);
-    let elements = document.getElementsByClassName("box");
-    for(var i=0;i<elements.length; i++){
-        elements[i].style.height = width/4 + 'px'
-    }
 });
-window.addEventListener('resize', function(event){
-    let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    width = Math.min(width, 480);
-    let elements = document.getElementsByClassName("box");
-    for(var i=0;i<elements.length; i++){
-        elements[i].style.height = width/4 + 'px'
-    }
-}, true);
+
 let ids = ["btn1", "btn2", "btn3", "btn4", "btn5", "btn6", "btn7", "btn8", "btn9", "btn10", "btn11", "btn12", "btn13", "btn14", "btn15", "btn16",];
 let cnt = 0;
 function startGame(){
@@ -107,4 +94,15 @@ function shuffle(array) {
       array[randomIndex], array[currentIndex]];
   }
   return array;
+}
+
+let icon =  document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "static/images/sun.png"
+    } else{
+        icon.src = "static/images/moon.png"
+    }
 }

@@ -1,53 +1,95 @@
-.head span a{
+body{
+    background-color: var(--primary-color);
+}
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #212121;
+
+    /* --primary-color: #212121;
+    --secondary-color: #ffffff; */
+}
+.dark-theme{
+    --primary-color: #212121;
+    --secondary-color: #ffffff;
+}
+nav{
+    background-color: var(--primary-color);
+}
+nav h3 a{
+    color: var(--secondary-color) !important;
+}
+
+.border{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-brand a{
+    color: #000;
     text-decoration: none;
-    color: #fff;
+}
+#icon{
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+.header{
+    padding: 10px 15px;
+    width: 320px;
+}
+.collapsible img{
+    border: none;
+}
+.header i:nth-child(2){
+    font-style: normal;
+    float: right;
 }
 .box{
     width: 60px;
-    height: 60px;
-    vertical-align: top;
+    height: 60px !important;
+    line-height: 60px;
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 22px;
-    margin: 2px;
-    border: 1px solid black;
-    border-radius: 15px;
-    background-color: rgb(93, 126, 120);
-    color: #fff;
-}
-.box:hover{
-    background-color: rgb(93, 126, 120);
-}
-.startGame{
-    border-radius: 55px;
+    padding-top: 0px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .container-main{
-    max-width: 480px;
-    min-width: 200px;
+    max-width: 320px; 
+    min-width: 320px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: var(--primary-color);
+}
+.header button{
+    padding: 0 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .square{
+    display: grid;
     text-align: center;
+    grid-template-areas: 
+    "btn1 btn2 btn3 btn4"
+    "btn5 btn6 btn7 btn8"
+    "btn9 btn10 btn11 btn12"
+    "btn13 btn14 btn15 btn16";
+    grid-row-gap: 0;
+    gap: 0.5cm;
+    justify-items: center;
+    background-color: var(--primary-color);
+    padding-top: 10px;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-.footer{
-    position: fixed;
-    left: 0;
+footer{
+    position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    font-size: 20px;
+    justify-content: center;
+    color: var(--secondary-color);
 }
-.footer a{
-    color: green;
-}
-
-
-.link{
+footer a{
+    color: var(--secondary-color) !important;
     text-decoration: none;
-    color: red;
 }
