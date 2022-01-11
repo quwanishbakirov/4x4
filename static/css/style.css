@@ -27,6 +27,7 @@ nav h3 a{
 .nav-brand a{
     color: #000;
     text-decoration: none;
+    font-size: 30px;
 }
 #icon{
     width: 30px;
@@ -83,8 +84,7 @@ nav h3 a{
     padding-top: 10px;
 }
 footer{
-    position: absolute;
-    bottom: 0;
+    margin-top: 40px;
     width: 100%;
     justify-content: center;
     color: var(--secondary-color);

@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 });
-
 let ids = ["btn1", "btn2", "btn3", "btn4", "btn5", "btn6", "btn7", "btn8", "btn9", "btn10", "btn11", "btn12", "btn13", "btn14", "btn15", "btn16",];
 let cnt = 0;
 function startGame(){
@@ -16,7 +15,6 @@ function startGame(){
     };
     cnt = 0;
     document.getElementById("cnt").innerText=cnt;
-
     for(let i = 0; i<16; i++){
         if(numbers[i]==16){
             document.getElementById(ids[i]).innerText = "";
@@ -24,8 +22,7 @@ function startGame(){
         }
         document.getElementById(ids[i]).innerText = numbers[i];
     }
-
-     for(let i = 0; i<16; i++){
+    for(let i = 0; i<16; i++){
         document.getElementById(ids[i]).onclick = function(){
             let m = Math.floor(i/4);
             let n = i%4;
@@ -95,14 +92,12 @@ function shuffle(array) {
   }
   return array;
 }
-
 let icon =  document.getElementById("icon");
-
 icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
         icon.src = "static/images/sun.png"
     } else{
-        icon.src = "static/images/moon.png"
+        icon.src = "static/images/moon .png"
     }
 }
