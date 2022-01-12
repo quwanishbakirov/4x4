@@ -50,7 +50,7 @@ function startGame(){
             if(k == 17){
                 let claps = new Audio('static/audios/claps.mp3');
                 claps.play();
-                alert("Qutlıqlayman! Sizdiń nátiyjeńiz" + " " + cnt);
+                alert("Congratulations! Your score is" + " " + cnt);
             }
         };
     }
