@@ -24,6 +24,8 @@ function startGame(){
     }
     for(let i = 0; i<16; i++){
         document.getElementById(ids[i]).onclick = function(){
+            let click = new Audio('static/audios/click.mp3');
+            click.play();
             let m = Math.floor(i/4);
             let n = i%4;
             if(n >= 1 && numbers[m*4+n-1] == 16){
@@ -46,6 +48,8 @@ function startGame(){
                 k++;
             }
             if(k == 17){
+                let claps = new Audio('static/audios/claps.mp3');
+                claps.play();
                 alert("Qutlıqlayman! Sizdiń nátiyjeńiz" + " " + cnt);
             }
         };
